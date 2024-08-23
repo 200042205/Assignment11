@@ -27,13 +27,34 @@
     <body>
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
         <!-- Start of your code -->
+        <div class = "heading1">
+        <h1> The Dice Roller</h1>
+        </div>
+
+
+        <label for="dice_type">Choose a dice:</label>
+        <select id="dice_type" py-change="select_face_option">
+            <option value="2">D2</option>
+            <option value="4">D4</option>
+            <option value="6">D6</option>
+            <option value="10">D10</option>
+            <option value="20">D20</option>
+            <option value="100">D100</option>
+        </select>
+
+        <label for="roll_num">Number of Rolls:</label>
+        <input type="number" id="roll_num" min="1" max="50">
+        <br>
+
+
+        <button type="button" py-click="roll_all_dice">Submit</button>
+        <button type="button" py-click="clear_history">Clear</button>
 
 
 
+        <div class="roll_history" id="roll-history">
 
-
-
-
+        </div>
 
 
 
