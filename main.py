@@ -20,7 +20,7 @@ def roll_all_dice(event):
     ...  # replace with your own code
     roll_num = document.querySelector("#roll_num").value
     for i in range(1, int(roll_num) + 1):
-        document.querySelector("div#roll-history").innerHTML += dice.dice_function(int(dice_type)) +  "<br>"
+        document.querySelector("div#roll-history").innerHTML += "You rolled a " + dice.dice_function(int(dice_type)) +  "<br>"
 
 
 def clear_history(event):
